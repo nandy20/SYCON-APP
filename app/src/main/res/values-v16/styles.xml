@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Header" parent="Base.TextAppearance.AppCompat.Large">
+        <item name="android:textSize">35dp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:fontFamily">cursive</item>
+    </style>
+</resources>
