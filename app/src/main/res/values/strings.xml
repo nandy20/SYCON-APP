@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EDC</string>
+
+    <string name="link">
+        Hello world <a href="www.google.co.in">link</a>
+    </string>
+
 </resources>

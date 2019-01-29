@@ -2,6 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/schedule"
-        android:title="Schedule" />
+        android:id="@+id/schedule1"
+        android:title="Schedule1">
+        <menu>
+           <group android:id="@+id/checkable"
+               android:checkableBehavior="all">
+               <item android:id="@+id/event1"
+                   android:title="event2"/>
+               <item android:title="event3"
+                   android:id="@+id/event2"/>
+           </group>
+        </menu>
+    </item>
+
 </menu>
