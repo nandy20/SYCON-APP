@@ -2,7 +2,8 @@
     <string name="app_name">EDC</string>
 
     <string name="link">
-        Hello world <a href="www.google.co.in">link</a>
+         &lt;a href="https://en.wikipedia.org/wiki/Steve_Jobs">Google&lt;/a>
     </string>
-
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

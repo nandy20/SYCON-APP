@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/profile" android:title="Profile"
+        />
+    <item android:id="@+id/career" android:title="Career"
+        />
+    <item android:id="@+id/lunch" android:title="Lunch"
+        />
+    <item android:id="@+id/od" android:title="OD Claim"
+        />
+</menu>

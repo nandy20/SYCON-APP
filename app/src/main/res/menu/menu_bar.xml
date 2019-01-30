@@ -3,15 +3,17 @@
 
     <item
         android:id="@+id/schedule1"
-        android:title="Schedule1">
+        android:title="Schedule">
+
         <menu>
-           <group android:id="@+id/checkable"
-               android:checkableBehavior="all">
-               <item android:id="@+id/event1"
-                   android:title="event2"/>
-               <item android:title="event3"
-                   android:id="@+id/event2"/>
-           </group>
+            <group
+                android:checkableBehavior="all"
+                android:id="@+id/group">
+                <item android:id="@+id/event"
+                    android:title="event"/>
+                <item android:title="event2"
+                    android:id="@+id/event2"/>
+            </group>
         </menu>
     </item>
 

@@ -1,12 +1,25 @@
 package com.example.nandhini.edc;
 
+import android.content.ClipData;
+import android.content.Context;
+import android.content.Intent;
+import android.os.PersistableBundle;
+import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.NavigationView;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -20,18 +33,47 @@ public class ImagesActivity extends AppCompatActivity {
     private ImageView[] dot;
     LinearLayout linearLayout;
     TextView textView;
+    private final static String MENU_SELECTED = "selected";
+    private int selected = -1;
+    MenuItem menuItem;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater=getMenuInflater();
         menuInflater.inflate(R.menu.menu_bar,menu);
+        if(selected!=-1){
+            if(selected==R.id.event){
+                menuItem = (MenuItem) menu.findItem(R.id.event2);
+                menuItem.setChecked(true);
+            }
+        }
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()==R.id.event2){
+            item.setChecked(true);
+        }
+        else if(item.getItemId()==R.id.event){
+            item.setChecked(true);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
+        selected=R.id.event;
+        super.onSaveInstanceState(outState, outPersistentState);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_images);
+        if (savedInstanceState != null){
+            selected = savedInstanceState.getInt(MENU_SELECTED);
+        }
         ImageAdapter imageAdapter=new ImageAdapter(this);
          viewPager=(ViewPager)findViewById(R.id.ViewPager);
          textView=(TextView)findViewById(R.id.textView);
