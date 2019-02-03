@@ -7,52 +7,11 @@
     tools:context=".ImagesActivity"
     android:id="@+id/clayout">
 
-
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="98dp"
-        android:linksClickable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.81" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="190dp"
-        android:layout_height="41dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="128dp"
-        android:layout_below="@+id/ViewPager"
-        android:layout_marginLeft="100dp"
-        android:text="TextView"
-        android:layout_marginTop="20dp"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.56"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
-
     <android.support.v4.view.ViewPager
         android:id="@+id/ViewPager"
         android:layout_width="380dp"
         android:layout_height="361dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
+        android:layout_centerHorizontal="true">
     </android.support.v4.view.ViewPager>
 
     <Button
@@ -65,46 +24,35 @@
         android:layout_marginStart="27dp"
         android:background="@android:color/transparent"
         android:fontFamily="cursive"
-        android:text="Twitter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
+        android:text="Twitter" />
 
     <Button
         android:id="@+id/ChatBot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/Twitter"
-        android:layout_toEndOf="@+id/textView"
+        android:layout_marginEnd="24dp"
         android:background="@android:color/transparent"
         android:fontFamily="cursive"
-        android:text="ChatBot"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.971"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.966" />
+        android:text="ChatBot" />
 
     <LinearLayout
         android:id="@+id/LinearLayout"
-        android:layout_width="94dp"
-        android:layout_height="27dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="130dp"
-        android:layout_marginTop="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/ViewPager"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.598"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616">
-
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout"
+        android:layout_centerHorizontal="true"
+        android:text="Mark Zuckerburg"
+        android:textSize="25sp" />
+
 </RelativeLayout>
