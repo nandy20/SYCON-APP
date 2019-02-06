@@ -18,11 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ImagesActivity"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait">
-
-        </activity>
+        <activity android:name=".ImagesActivity" />
+        <activity android:name=".SyconActivity"></activity>
     </application>
 
 </manifest>
