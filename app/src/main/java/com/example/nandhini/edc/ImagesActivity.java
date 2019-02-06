@@ -24,6 +24,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.util.Date;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class ImagesActivity extends AppCompatActivity {
 
@@ -36,28 +40,33 @@ public class ImagesActivity extends AppCompatActivity {
     private final static String MENU_SELECTED = "selected";
     private int selected = -1;
     MenuItem menuItem;
+    DateFormat dateFormat;
+    Date date;
+    Calendar cal;
+    String time2,time3="14:10";
+    String time1="14:09";
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater=getMenuInflater();
+        Log.i("Time",String.valueOf(time2));
         menuInflater.inflate(R.menu.menu_bar,menu);
-        if(selected!=-1){
-            if(selected==R.id.event){
-                menuItem = (MenuItem) menu.findItem(R.id.event2);
-                menuItem.setChecked(true);
-            }
+        if(((String)time2).compareTo(time1)>=0){
+            menuItem = (MenuItem) menu.findItem(R.id.event2);
+            Log.i("Original",String.valueOf(time2.compareTo(time1)>0));
+            Log.i("Original",String.valueOf(time2)+" "+time1);
+            menuItem.setChecked(true);
+        }
+        if(((String)time2).compareTo(time3)>=0){
+          MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.event);
+            Log.i("Original",time2);
+            menuItem1.setChecked(true);
         }
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId()==R.id.event2){
-            item.setChecked(true);
-        }
-        else if(item.getItemId()==R.id.event){
-            item.setChecked(true);
-        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -71,6 +80,11 @@ public class ImagesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_images);
+
+        dateFormat = new SimpleDateFormat("HH:mm");
+        date = new Date();
+        cal = Calendar.getInstance();
+        time2=dateFormat.format(cal.getTime());
         if (savedInstanceState != null){
             selected = savedInstanceState.getInt(MENU_SELECTED);
         }
@@ -98,7 +112,6 @@ public class ImagesActivity extends AppCompatActivity {
                 Log.i("PagePresent",String.valueOf(i));
                 textView.setText(names[i]);
             }
-
             @Override
             public void onPageSelected(int position) {
                 int i;
@@ -107,7 +120,6 @@ public class ImagesActivity extends AppCompatActivity {
                 }
                 dot[position].setImageDrawable(ContextCompat.getDrawable(getApplicationContext(),R.drawable.active_dot));
             }
-
             @Override
             public void onPageScrollStateChanged(int i) {
 
