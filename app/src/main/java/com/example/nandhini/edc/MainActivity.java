@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void SyconHome(View view){
 
-        Intent intent=new Intent(this,ImagesActivity.class);
+        Intent intent=new Intent(this,SyconActivity.class);
         startActivity(intent);
     }
 
