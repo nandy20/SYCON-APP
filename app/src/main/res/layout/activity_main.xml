@@ -33,6 +33,7 @@
         android:background="@android:color/transparent"
         android:fontFamily="cursive"
         android:text="Want to know our past"
+        android:onClick="SyconPast"
         android:textSize="35sp"
         android:layout_below="@+id/button"
         app:layout_constraintBottom_toBottomOf="parent"

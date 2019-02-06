@@ -39,7 +39,5 @@ public class MainActivity extends AppCompatActivity {
 
     public void SyconPast(View view){
 
-        Intent intent=new Intent(this,ImagesActivity.class);
-        startActivity(intent);
     }
 }

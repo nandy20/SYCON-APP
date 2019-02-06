@@ -43,22 +43,60 @@ public class ImagesActivity extends AppCompatActivity {
     DateFormat dateFormat;
     Date date;
     Calendar cal;
-    String time2,time3="14:10";
-    String time1="14:09";
+    String time2,Sylendra="09:00",Chandra_Karlo="09:25",Padma_Subramanyam="09:50",Break1="10:15",Lakshaman_Krish="11:00";
+    String Auto_annadurai="11:25",Malathi_kola="11:50",Lunch="12:15",Kurangan="13:25",Kirthi_Jayakumar="14:15",Shravan_Krishnan="14:40";
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater menuInflater=getMenuInflater();
         Log.i("Time",String.valueOf(time2));
         menuInflater.inflate(R.menu.menu_bar,menu);
-        if(((String)time2).compareTo(time1)>=0){
-            menuItem = (MenuItem) menu.findItem(R.id.event2);
-            Log.i("Original",String.valueOf(time2.compareTo(time1)>0));
-            Log.i("Original",String.valueOf(time2)+" "+time1);
+        if(((String)time2).compareTo(Sylendra)>=0){
+            menuItem = (MenuItem) menu.findItem(R.id.Sylendra);
             menuItem.setChecked(true);
         }
-        if(((String)time2).compareTo(time3)>=0){
-          MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.event);
+        if(((String)time2).compareTo(Chandra_Karlo)>=0){
+          MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.Chandra_Karlo);
+            Log.i("Original",time2);
+            menuItem1.setChecked(true);
+        }
+        if(((String)time2).compareTo(Break1)>=0){
+            MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.break1);
+            Log.i("Original",time2);
+            menuItem1.setChecked(true);
+        }
+        if(((String)time2).compareTo(Lakshaman_Krish)>=0){
+            MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.Lakshmanan_Krish);
+            Log.i("Original",time2);
+            menuItem1.setChecked(true);
+        }
+        if(((String)time2).compareTo(Auto_annadurai)>=0){
+            MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.Auto_Annadurai);
+            Log.i("Original",time2);
+            menuItem1.setChecked(true);
+        }
+        if(((String)time2).compareTo(Malathi_kola)>=0){
+            MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.Malathi_kola);
+            Log.i("Original",time2);
+            menuItem1.setChecked(true);
+        }
+        if(((String)time2).compareTo(Lunch)>=0){
+            MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.Lunch);
+            Log.i("Original",time2);
+            menuItem1.setChecked(true);
+        }
+        if(((String)time2).compareTo(Kurangan)>=0){
+            MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.Kurangan);
+            Log.i("Original",time2);
+            menuItem1.setChecked(true);
+        }
+        if(((String)time2).compareTo(Kirthi_Jayakumar)>=0){
+            MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.Kirthi_Jayakumar);
+            Log.i("Original",time2);
+            menuItem1.setChecked(true);
+        }
+        if(((String)time2).compareTo(Shravan_Krishnan)>=0){
+            MenuItem  menuItem1 = (MenuItem) menu.findItem(R.id.Shravan_Jayakumar);
             Log.i("Original",time2);
             menuItem1.setChecked(true);
         }
@@ -72,7 +110,6 @@ public class ImagesActivity extends AppCompatActivity {
 
     @Override
     public void onSaveInstanceState(Bundle outState, PersistableBundle outPersistentState) {
-        selected=R.id.event;
         super.onSaveInstanceState(outState, outPersistentState);
     }
 

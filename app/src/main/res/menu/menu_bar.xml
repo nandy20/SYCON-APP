@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/schedule1"
@@ -7,14 +8,43 @@
 
         <menu>
             <group
-                android:checkableBehavior="all"
-                android:id="@+id/group">
-                <item android:id="@+id/event"
-                    android:title="event"/>
-                <item android:title="event2"
-                    android:id="@+id/event2"/>
+                android:id="@+id/group"
+                android:checkableBehavior="all">
+                <item
+                    android:id="@+id/Sylendra"
+                    android:title="Sylendra" />
+                <item
+                    android:id="@+id/Chandra_Karlo"
+                    android:title="Chandra Karlo" />
+                <item
+                    android:id="@+id/padma"
+                    android:title="padma" />
+                <item
+                    android:id="@+id/break1"
+                    android:title="break1" />
+                <item
+                    android:id="@+id/Lakshmanan_Krish"
+                    android:title="Lakshmanan Krish" />
+                <item
+                    android:id="@+id/Auto_Annadurai"
+                    android:title="Auto Annadurai" />
+                <item
+                    android:id="@+id/Malathi_kola"
+                    android:title="Malathi kola" />
+                <item
+                    android:id="@+id/Lunch"
+                    android:title="Lunch" />
+                <item
+                    android:id="@+id/Kurangan"
+                    android:title="Kurangan" />
+                <item
+                    android:id="@+id/Kirthi_Jayakumar"
+                    android:title="Kirthi Jayakumar" />
+                <item
+                    android:id="@+id/Shravan_Jayakumar"
+                    android:title="Shravan Jayakumar" />
+
             </group>
         </menu>
     </item>
-
 </menu>
