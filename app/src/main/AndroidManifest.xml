@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ImagesActivity"></activity>
+        <activity android:name=".ImagesActivity" />
+        <activity android:name=".SyconActivity"></activity>
     </application>
 
 </manifest>

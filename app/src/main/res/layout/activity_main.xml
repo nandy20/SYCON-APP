@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/sycon"
-                android:text="SYcon"
+                android:text="EVENTS"
                 android:onClick="SyconHome"
                 style = "@style/MainButton"
                 android:background="@color/Sycon"/>
