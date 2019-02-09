@@ -24,7 +24,9 @@
         android:layout_marginStart="27dp"
         android:background="@android:color/transparent"
         android:fontFamily="cursive"
-        android:text="Twitter" />
+        android:text="Twitter"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="27dp" />
 
     <Button
         android:id="@+id/ChatBot"
@@ -35,7 +37,9 @@
         android:layout_marginEnd="24dp"
         android:background="@android:color/transparent"
         android:fontFamily="cursive"
-        android:text="ChatBot" />
+        android:text="ChatBot"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp" />
 
     <LinearLayout
         android:id="@+id/LinearLayout"
