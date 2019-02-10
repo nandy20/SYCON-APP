@@ -3,6 +3,6 @@
     <color name="colorPrimary">#fc0509</color>
     <color name="colorPrimaryDark">#f60a21</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="Sycon">#FED029</color>
-    <color name="SyconColor">#0C2B47</color>
+    <color name="Sycon">#FFD600</color>
+    <color name="SyconColor">#151F35</color>
 </resources>

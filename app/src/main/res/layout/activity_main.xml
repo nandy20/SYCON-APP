@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer"
-    android:background="@color/SyconColor"
+    android:background= "@color/SyconColor"
     tools:context=".MainActivity">
 
 
@@ -24,6 +24,7 @@
         android:layout_height="match_parent"
         android:layout_margin="15dp"
         android:gravity="right"
+        android:scrollbars="none"
         android:textAlignment="gravity">
 
         <LinearLayout

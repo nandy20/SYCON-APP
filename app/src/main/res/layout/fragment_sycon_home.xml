@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background= "@color/SyconColor"
     tools:context=".SyconHomeFragment"
     android:padding="12dp">
 
@@ -57,5 +58,7 @@
         android:layout_below="@+id/LinearLayout"
         android:layout_centerHorizontal="true"
         android:text="Mark Zuckerburg"
+        android:textColor="#FFDE80"
         android:textSize="25sp" />
+
 </RelativeLayout>
