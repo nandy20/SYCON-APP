@@ -6,6 +6,7 @@
     <item name="colorPrimary">#FFE7B8</item>
     <item name="colorPrimaryDark">#FFE7B8</item>
     <item name="colorAccent">#FFE7B8</item>
+    <item name="android:textColor">@color/SyconColor</item>
 </style>
 
 <style name="MainButton" parent="Base.Theme.AppCompat.Light.DarkActionBar">
