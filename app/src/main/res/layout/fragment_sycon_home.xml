@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SyconHomeFragment">
+    tools:context=".SyconHomeFragment"
+    android:padding="12dp">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/ViewPager"
-        android:layout_width="380dp"
-        android:layout_height="361dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
         android:layout_centerHorizontal="true">
     </android.support.v4.view.ViewPager>
 
@@ -21,7 +22,7 @@
         android:layout_marginBottom="28dp"
         android:layout_marginStart="27dp"
         android:background="@android:color/transparent"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/bebas"
         android:text="Twitter"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="27dp" />
@@ -34,7 +35,7 @@
         android:layout_alignTop="@+id/Twitter"
         android:layout_marginEnd="24dp"
         android:background="@android:color/transparent"
-        android:fontFamily="cursive"
+        android:fontFamily="@font/bebas"
         android:text="ChatBot"
         android:layout_alignParentRight="true"
         android:layout_marginRight="24dp" />
@@ -52,9 +53,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/caviardreams_bold"
         android:layout_below="@+id/LinearLayout"
         android:layout_centerHorizontal="true"
         android:text="Mark Zuckerburg"
         android:textSize="25sp" />
-
 </RelativeLayout>

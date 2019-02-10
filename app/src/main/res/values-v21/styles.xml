@@ -9,4 +9,7 @@
         <item name="android:colorPrimary">@color/colorPrimary</item>
         <item name="android:colorPrimaryDark">@color/colorPrimary</item>
     </style>
+    <style name="NavigationView" >
+        <item name="fontFamily">@font/caviardreams_bold</item>
+    </style>
 </resources>

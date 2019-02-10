@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SyconAboutFragment">
+    tools:context=".SyconAboutFragment"
+    android:padding="12dp">
 
     <!-- TODO: Update blank fragment layout -->
    <ScrollView
@@ -21,6 +22,7 @@
                android:layout_weight="3"
                android:textColor="@color/Sycon"
                android:text="ABOUT"
+               android:fontFamily="@font/caviardreams_bold"
                android:textSize="40sp"
                android:padding="24dp"
                android:textStyle="bold"
@@ -29,10 +31,10 @@
 
            <ImageView
                android:layout_width="match_parent"
-               android:layout_height="358dp"
+               android:layout_height="275dp"
                android:layout_weight="4"
-               android:src="@drawable/team"
-               android:background="@drawable/roundimage"/>
+               android:background="@drawable/roundimage"
+               android:src="@drawable/team" />
 
 
            <TextView
@@ -42,6 +44,7 @@
                android:text="This is the footing of SSN’s very own annual youth conference SYCon.
 Sycon (SSN Youth CONference), the flagship event of Lakshya is a conference of eminent speakers from diverse domains, who share their ideas and opinions on a certain themed topic. These speakers hail from multifarious walks of life such as business, music, sports, fashion, etc. and their interaction with students of SSN and other colleges of the city alike brings in varied perspectives around the central theme, kindling the thoughts of and opening up new vistas for the attendees and the speakers alike."
                android:textSize="20sp"
+               android:fontFamily="@font/ubuntu_m"
                android:textColor="@color/Sycon"
                android:textAlignment="center"/>
        </LinearLayout>
