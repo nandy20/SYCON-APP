@@ -27,6 +27,19 @@
         android:text="Twitter"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="27dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter SYCon '19"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/caviardreams_bold"
+        android:textSize="45sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        />
 
     <Button
         android:id="@+id/ChatBot"
