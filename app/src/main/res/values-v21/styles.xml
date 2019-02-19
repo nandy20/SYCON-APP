@@ -3,10 +3,17 @@
 
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorPrimary">@color/colorPrimary</item>
-        <item name="android:colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorPrimary">#FFD600</item>
+        <item name="actionMenuTextColor">@color/SyconColor</item>
+        <item name="android:textColor">#FFD600</item>
+        <item name="colorPrimaryDark">#FFD600</item>
+        <item name="colorAccent">#FFD600</item>
+        <item name="android:colorPrimary">#FFD600</item>
+        <item name="android:colorPrimaryDark">#FFD600</item>
     </style>
+    <style name="NavigationView" >
+        <item name="fontFamily">@font/caviardreams_bold</item>
+
+    </style>
+
 </resources>
