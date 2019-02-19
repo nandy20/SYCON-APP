@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background= "@color/SyconColor"
     tools:context=".ImagesActivity"
     android:id="@+id/clayout">
 
@@ -27,6 +28,7 @@
         android:text="Twitter"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="27dp" />
+
 
     <Button
         android:id="@+id/ChatBot"

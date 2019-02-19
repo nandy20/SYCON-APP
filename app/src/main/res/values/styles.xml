@@ -3,9 +3,10 @@
 <!-- Base application theme. -->
 <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
     <!-- Customize your theme here. -->
-    <item name="colorPrimary">@color/colorPrimary</item>
-    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-    <item name="colorAccent">@color/colorAccent</item>
+    <item name="colorPrimary">#FFE7B8</item>
+    <item name="colorPrimaryDark">#FFE7B8</item>
+    <item name="colorAccent">#FFE7B8</item>
+    <item name="android:textColor">@color/SyconColor</item>
 </style>
 
 <style name="MainButton" parent="Base.Theme.AppCompat.Light.DarkActionBar">
@@ -17,8 +18,11 @@
 
     <!-- Style for a tab that displays a category name -->
     <style name="CategoryTab" parent="Widget.Design.TabLayout">
-        <item name="tabIndicatorColor">@android:color/white</item>
-        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabIndicatorColor">#FFD600</item>
+        <item name="tabSelectedTextColor">#FFD600</item>
+        <item name="android:background">@color/SyconColor</item>
+        <item name="android:colorPrimaryDark">@color/SyconColor</item>
+        <item name="android:colorPrimary">@color/SyconColor</item>
         <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
     </style>
 
